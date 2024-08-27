@@ -8,7 +8,7 @@ package com.hms.model;
  *
  * @author Banna
  */
-public class LabTest {
+public abstract class LabTest {
     protected String title;
     protected double cost;
     protected boolean isAvailable;
@@ -28,4 +28,8 @@ public class LabTest {
                  +"Avaiablity :"+this.isAvailable;
          return output;
      }
+     
+     public abstract boolean deliverReport();
+     
+     public abstract double CalCost();
 }

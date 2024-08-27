@@ -8,7 +8,7 @@ package com.hms.model;
  *
  * @author Banna
  */
-public class RadiologicalTest extends LabTest {
+public class RadiologicalTest extends LabTest implements TestReport, CostCalculation {
    //  String title;
    //  double cost;
    //  boolean isAvailable;
@@ -34,6 +34,17 @@ public class RadiologicalTest extends LabTest {
 
     public boolean returnRTestInfo() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    @Override
+    public double CalCost(){
+        double totalCost = 0;
+        
+        return totalCost;
+    }
+    
+    public boolean deliverReport(){
+        return false;
     }
     
 }

@@ -11,7 +11,7 @@ import com.hms.model.LabTest;
  *
  * @author Banna
  */
-public class PathologicalTest extends LabTest {
+public class PathologicalTest extends LabTest implements TestReport, CostCalculation {
 //     String title;
 //     double cost;
 //     boolean isAvailable;
@@ -107,6 +107,19 @@ public class PathologicalTest extends LabTest {
                 + "Availability: "+this.isAvailable;
         return output;
     }
+    @Override
+    public double CalCost(){
+        double totalCost= 0;// = this.cost - this.cost*
+                return totalCost;
+    }
+    
+    @Override
+    public boolean deliverReport(){
+        return false;
+    }
+
+    
+    
 
     
 }

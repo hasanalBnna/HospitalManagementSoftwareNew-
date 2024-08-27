@@ -20,6 +20,10 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
     </Container>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="ChangeWindow">
@@ -71,45 +75,51 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
-                      <Component id="txtTestTitle" min="-2" pref="285" max="-2" attributes="0"/>
+                      <Component id="btnTestCk" min="-2" pref="285" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtTestTitle" alignment="1" min="-2" pref="285" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="labelOutput" min="-2" pref="293" max="-2" attributes="0"/>
-                                  <Component id="btnCancel" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="labelTitle" min="-2" pref="179" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="199" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelOutput" min="-2" pref="293" max="-2" attributes="0"/>
+                                          <Component id="btnCancel" alignment="1" min="-2" pref="99" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="labelCost1" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                      <Component id="labelAvailable" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
-                                      <Component id="labelCost" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="labelTitle" min="-2" pref="179" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="labelCost1" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                              <Component id="labelAvailable" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
+                                              <Component id="labelCost" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
+                                              <Component id="jLabel1" alignment="1" min="-2" pref="189" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtTestCost" min="-2" pref="280" max="-2" attributes="0"/>
+                                          <Component id="btnRadioTest" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnPathTest" min="-2" max="-2" attributes="0"/>
+                                          <Component id="checkBoxAvailable" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
+                                          <Component id="btnSubmit" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtTestCost" min="-2" pref="280" max="-2" attributes="0"/>
-                                  <Component id="btnUrine" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnBlood" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnHormone" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="checkBoxAvailable" alignment="0" min="-2" pref="123" max="-2" attributes="0"/>
-                                  <Component id="btnSubmit" alignment="0" min="-2" pref="107" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -128,16 +138,19 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="labelCost1" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="btnBlood" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnUrine" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelCost1" alignment="0" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnPathTest" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnRadioTest" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="btnHormone" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="71" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnTestCk" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtTestCost" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="labelCost" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
@@ -216,19 +229,36 @@
         <Property name="text" type="java.lang.String" value="Test Type"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="btnBlood">
+    <Component class="javax.swing.JRadioButton" name="btnPathTest">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Blood Test"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pathological Test"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPathTestActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="btnUrine">
+    <Component class="javax.swing.JRadioButton" name="btnRadioTest">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Urine Test"/>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="buttonGroup1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Radiological Test"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRadioTestActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="btnHormone">
+    <Component class="javax.swing.JTextField" name="btnTestCk">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTestCkActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Hormone Test"/>
+        <Property name="text" type="java.lang.String" value="..."/>
       </Properties>
     </Component>
   </SubComponents>
