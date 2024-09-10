@@ -22,6 +22,7 @@ public class ShowOutput extends javax.swing.JFrame {
 //        bxshowOutput.setText(pts.returnPTestInfo());
         DefaultTableModel tableModel = (DefaultTableModel) bxshowOutput.getModel();
         
+//        Object[] rowData = pts.returnPTestInfo().split("");
         Object[] rowData = pts.returnPTestInfo().split("\r\n");
         tableModel.addRow(rowData);
     }

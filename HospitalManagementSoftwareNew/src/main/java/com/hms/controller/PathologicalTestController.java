@@ -13,9 +13,9 @@ import com.hms.model.PathologicalTest;
 public class PathologicalTestController {
     
     static PathologicalTest pTest;
-    public void initializePathologicalTest(String title,double cost,boolean isAvailable){
+    public void initializePathologicalTest(String title,double cost,boolean isAvailable, String reagent){
         pTest = new PathologicalTest(
-        title, cost, isAvailable);
+        title, cost, isAvailable, reagent);
         
     }
     

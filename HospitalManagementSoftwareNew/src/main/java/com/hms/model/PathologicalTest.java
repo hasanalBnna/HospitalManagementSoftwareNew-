@@ -32,8 +32,8 @@ public class PathologicalTest extends LabTest implements TestReport, CostCalcula
         this.reagent = reagent;
     }
     @Override
-    public String returnLabTestInfo(){
-      String output = super.returnLabTestInfo()+"\n"
+    public String toString(){
+      String output = super.toString()+"\n"
               +"Reagent: "+this.reagent+"\n";
       return output;
     }
@@ -50,7 +50,8 @@ public class PathologicalTest extends LabTest implements TestReport, CostCalcula
     public String show(){
         String output = "Test name: "+this.title+ "\r\n"
                 + " Cost: "+this.cost+"\r\n"
-                + " Availability: "+this.isAvailable;
+                + " Availability: "+this.isAvailable+ "\r\n"
+                + "Info: "+this.reagent;
         return output;
     }
     void search(String title){

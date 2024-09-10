@@ -22,12 +22,18 @@ public abstract class LabTest {
          this.isAvailable = isAvailable;
          
      }
-     public String returnLabTestInfo(){
-         String output = "Test name :"+this.title+"\n"
+     
+    @Override
+     public String toString(){
+         return "Test name :"+this.title+"\n"
                  +"Cost :"+this.cost+"\n"
                  +"Avaiablity :"+this.isAvailable;
-         return output;
      }
+
+//    @Override
+//    public String toString() {
+//        return "LabTest{" + "title=" + title + ", cost=" + cost + ", isAvailable=" + isAvailable + '}';
+//    }
      
      public abstract boolean report();
      

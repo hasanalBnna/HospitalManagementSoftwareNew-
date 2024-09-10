@@ -250,7 +250,8 @@ public class LabTestSetup extends javax.swing.JFrame {
      PathologicalTestController ptc = new PathologicalTestController();
      ptc.initializePathologicalTest(txtTestTitle.getText(),
              Double.parseDouble(txtTestCost.getText()),
-             checkBoxAvailable.isSelected());
+             checkBoxAvailable.isSelected(),
+             btnTestCk.getText()   );
      
 //    labelOutput.setText(ptc.returnPTestInfo());
 
