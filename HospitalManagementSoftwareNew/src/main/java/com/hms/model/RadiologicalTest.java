@@ -46,5 +46,9 @@ public class RadiologicalTest extends LabTest implements TestReport, CostCalcula
     public boolean deliverReport(){
         return false;
     }
+    public boolean report(){
+        return false;
+    }
+
     
 }

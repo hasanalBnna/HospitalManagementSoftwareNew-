@@ -5,10 +5,11 @@
 package com.hms.view;
 
 import com.hms.controller.PathologicalTestController;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author user
+ * @author Banna
  */
 public class ShowOutput extends javax.swing.JFrame {
 
@@ -18,7 +19,11 @@ public class ShowOutput extends javax.swing.JFrame {
     public ShowOutput() {
         initComponents();
         PathologicalTestController pts = new PathologicalTestController();
-        bxshowOutput.setText(pts.returnPTestInfo());
+//        bxshowOutput.setText(pts.returnPTestInfo());
+        DefaultTableModel tableModel = (DefaultTableModel) bxshowOutput.getModel();
+        
+        Object[] rowData = pts.returnPTestInfo().split("\r\n");
+        tableModel.addRow(rowData);
     }
     
     
@@ -32,30 +37,36 @@ public class ShowOutput extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        bxshowOutput = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        bxshowOutput = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        bxshowOutput.setColumns(20);
-        bxshowOutput.setRows(5);
-        jScrollPane1.setViewportView(bxshowOutput);
+        bxshowOutput.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Title", "Cost", "Available", "Info"
+            }
+        ));
+        jScrollPane2.setViewportView(bxshowOutput);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(88, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(86, 86, 86))
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(201, Short.MAX_VALUE))
+                .addGap(19, 19, 19)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(70, Short.MAX_VALUE))
         );
 
         pack();
@@ -97,7 +108,9 @@ public class ShowOutput extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea bxshowOutput;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable bxshowOutput;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
+
 }
+

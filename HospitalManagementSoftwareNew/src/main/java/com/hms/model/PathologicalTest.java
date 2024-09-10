@@ -37,6 +37,16 @@ public class PathologicalTest extends LabTest implements TestReport, CostCalcula
               +"Reagent: "+this.reagent+"\n";
       return output;
     }
+
+    @Override
+    public boolean deliverReport() {
+        return false;
+    }
+    @Override
+    public boolean report() {
+        return false;
+    }
+
     public String show(){
         String output = "Test name: "+this.title+ "\r\n"
                 + " Cost: "+this.cost+"\r\n"
@@ -113,10 +123,8 @@ public class PathologicalTest extends LabTest implements TestReport, CostCalcula
                 return totalCost;
     }
     
-    @Override
-    public boolean deliverReport(){
-        return false;
-    }
+
+
 
     
     

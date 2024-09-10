@@ -29,7 +29,7 @@ public abstract class LabTest {
          return output;
      }
      
-     public abstract boolean deliverReport();
+     public abstract boolean report();
      
      public abstract double CalCost();
 }

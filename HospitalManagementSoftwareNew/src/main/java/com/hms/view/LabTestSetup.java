@@ -11,12 +11,12 @@ import com.hms.model.PathologicalTest;
  *
  * @author Banna
  */
-public class PathologicalTestSetup extends javax.swing.JFrame {
+public class LabTestSetup extends javax.swing.JFrame {
 
     /**
      * Creates new form PathologicalTestSetup
      */
-    public PathologicalTestSetup() {
+    public LabTestSetup() {
         initComponents();
     }
     public void TypeTest(){
@@ -279,7 +279,7 @@ public class PathologicalTestSetup extends javax.swing.JFrame {
     private void patholoSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patholoSearchActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new PathologicalTestSearch().setVisible(true);
+        new LabTestSearch().setVisible(true);
     }//GEN-LAST:event_patholoSearchActionPerformed
 
     private void btnTestCkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestCkActionPerformed

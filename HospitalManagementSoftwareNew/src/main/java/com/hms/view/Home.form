@@ -11,7 +11,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="menuPTest">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pathological Test"/>
+            <Property name="text" type="java.lang.String" value="Lab Test"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="menuPTestSetup">
